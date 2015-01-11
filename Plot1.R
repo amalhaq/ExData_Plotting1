@@ -32,7 +32,7 @@ subframe$Time<- paste(subframe$Date, subframe$Time)
 subframe$Time<- ymd_hms(subframe$Time)
 
 
-par(mar=c(4.2,4.2, 2.1, 2.1), bg = "gray56")#setting graphical parameter for plot
+par(mar=c(4.2,4.2, 2.1, 2.1), bg = "gray56")#setting graphical parameters for plot
 
 #Piecemeal construction of histogram; 'ylim' is necessary to set upper/lower limits of y axis
 hist(subframe$Global_active_power, col= "red", main = "Global Active Power", 

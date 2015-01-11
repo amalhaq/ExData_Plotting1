@@ -44,8 +44,8 @@ plot(subframe$Time, subframe$Global_active_power, xlab = "",
      ylab = "Global Active Power", type ="n", )
 lines(subframe$Time, subframe$Global_active_power)
 
-#this is exactly the code for Plot3; it will go in 2nd row below the first plot because I
-#used mfcol()
+#this is exactly the code for Plot3; it will go in the 2nd row below the first plot
+#because I used mfcol()
 with(subframe, plot(subframe$Time, Sub_metering_1, xlab = "", 
                     ylab = "Energy sub metering", type ="l", lwd =1.5))
 with(subframe, lines(Time, Sub_metering_2, col = "red", lwd = 1))
@@ -56,7 +56,7 @@ legend("topright", pch="_", col= c("black", "red", "blue"),
                  "Sub_metering_3"), cex=1.0, bty ="n")
 
 #straightforward plot, remember axis labels.  This plot will go in the 1st row, 
-#next to the first plot
+#to the right of the first plot
 plot(subframe$Time, subframe$Voltage, xlab = "datetime", 
      ylab = "Voltage", type ="l")
 

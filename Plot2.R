@@ -34,7 +34,8 @@ subframe$Time<- ymd_hms(subframe$Time)
 
 par(mar=c(4.2,4.2, 2.1, 2.1), bg = "gray56") #setting graphical parameters
 
-#piecemeal construction of plot; type ="n" is necessary to allow the next call to 'lines()'
+#piecemeal construction of plot; type ="n" is necessary to set up the plot area without
+#graphing, and to allow the next call to 'lines()'
 plot(subframe$Time, subframe$Global_active_power, xlab = "", 
      ylab = "Global Active Power (kilowatts)", type ="n")
 #call lines() connects the data points to give a line graph

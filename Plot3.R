@@ -36,7 +36,7 @@ png(file="Project1/Plot3.png") #setting up an external device to export plot bei
 par(mar=c(4.2,4.2,4.2,2), bg = "gray56") #setting graphical parameters
 
 #tell R which dataset to use, and the specific variables to plot, constructing piecemeal
-#to include labels, graph type and thickness of lines
+#to include labels, graph type, and thickness of lines
 with(subframe, plot(subframe$Time, Sub_metering_1, xlab = "", 
                     ylab = "Energy sub metering", type ="l", lwd =1.5))
 
